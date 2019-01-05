@@ -14,5 +14,13 @@ app.use('/', express.static(__dirname + '/static'));
 app.get('/',(req,res)=>{
      res.render('index');
 })
+
+app.get('/new', (req,res)=>{
+     res.render('new');
+})
+
+app.post('/boats',(req,res)=>{
+      res.send(req.body);
+})
  
 app.listen(PORT);
