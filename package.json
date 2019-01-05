@@ -1,0 +1,19 @@
+{
+  "name": "boatbook",
+  "version": "1.0.0",
+  "description": "information about all bering sea boats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rufasa85/boatBook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rufasa85/boatBook/issues"
+  },
+  "homepage": "https://github.com/Rufasa85/boatBook#readme"
+}
