@@ -1,1 +1,12 @@
-<h1>all the boats</h1>
+<h1>All the boats</h1>
+{{#each boats}}
+    <div class="boatDiv">
+        <h3 class="boatName">{{this.name}}</h3>
+        <h5 class="fishery">{{this.fishery}}</h5>
+        {{#if this.image}}
+            <img src={{this.image}} alt="">
+        {{/if}}
+        <span class="crew">{{this.crew}} crew</span>
+        <span class="length">{{this.length}} feet long</span>
+    </div>
+{{/each}}
