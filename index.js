@@ -21,6 +21,12 @@ app.get('/new', (req,res)=>{
      res.render('new');
 })
 
+app.get('/:id',(req,res)=>{
+     db.boat.find({where:{id:req.params.id}}).then(boat=>{
+          res.render('show', {boat:boat});
+     })
+})
+
 app.post('/boats',(req,res)=>{
      let newBoat = req.body;
      if(newBoat.private) newBoat.private=true;
