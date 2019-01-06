@@ -20,7 +20,12 @@ app.get('/new', (req,res)=>{
 })
 
 app.post('/boats',(req,res)=>{
-      res.send(req.body);
+     let newBoat = req.body;
+     if(newBoat.private) newBoat.private=true;
+     else newBoat.private = false;
+     db.boat.create(newBoat).then(data=>{
+          res.redirect('/')
+     })
 })
  
 app.listen(PORT);
