@@ -12,7 +12,9 @@ app.use(express.json());
 app.use('/', express.static(__dirname + '/static'));
 
 app.get('/',(req,res)=>{
-     res.render('index');
+     db.boat.findAll({}).then(boats=>{
+          res.render('index',{boats:boats})
+     })
 })
 
 app.get('/new', (req,res)=>{
