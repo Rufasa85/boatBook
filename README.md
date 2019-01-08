@@ -1,1 +1,1 @@
-information about all bering sea boats
+information about all bering sea boats!
